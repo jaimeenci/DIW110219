@@ -2,3 +2,27 @@
 body{
     font-size: 1.2em;
 }
+
+.gridcontenedor{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 1em;
+    header, footer{
+        grid-column: 1 / 4;
+    }
+}
+
+@media all and (max-width:700px){
+    aside, article {
+        grid-column: 1 / 4;
+    }
+}
+
+header, aside, article, footer {
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh; /* Con respecto a la altura - 1% de la altura de la ventana del navegador */
+    
+} 
