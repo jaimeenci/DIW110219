@@ -1,0 +1,23 @@
+body {
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 10vh 30vh 10vh;
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 80vw;
+  padding: 1em 0;
+}
+
+header, footer {
+  grid-column: 1/3;
+}
+
+header, main, aside, footer {
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=estiloslayouts3.css.map */
