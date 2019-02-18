@@ -1,0 +1,36 @@
+.contenedorgrid {
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: auto 20vw;
+  grid-gap: 1em;
+}
+.contenedorgrid header, .contenedorgrid footer {
+  grid-column: 1/3;
+  min-height: 25vh;
+}
+.contenedorgrid main {
+  grid-column: 1/2;
+  min-height: 50vh;
+}
+.contenedorgrid aside {
+  grid-column: 2/3;
+  min-height: 50vh;
+}
+.contenedorgrid header, .contenedorgrid main, .contenedorgrid aside, .contenedorgrid footer {
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media all and (max-width: 700px) {
+  .contenedorgrid aside {
+    grid-column: 1/3;
+    min-height: 25vh;
+  }
+  .contenedorgrid main {
+    grid-column: 1/3;
+    min-height: 50vh;
+  }
+}
+
+/*# sourceMappingURL=estiloslayouts4.css.map */
